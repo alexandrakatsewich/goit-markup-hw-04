@@ -124,7 +124,11 @@ body {
   margin-right: 50px;
 }
 
-.header-mail-link {
+.header-contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -132,9 +136,19 @@ body {
   color: var(--text-color);
 }
 
-.header-mail-link:hover,
-.header-mail-link:focus {
+.header-contact-link:hover,
+.header-contact-link:focus {
   color: var(--accent-color);
+}
+
+.contacts-svg {
+  margin-right: 10px;
+  fill: var(--text-color);
+}
+
+.contacts-svg:hover,
+.contacts-svg:focus {
+  fill: var(--accent-color);
 }
 
 /*=============HEADER END=============*/
@@ -147,6 +161,13 @@ body {
 }
 
 .hero-container {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg.jpg);
+  background-size: cover;
+
   margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -221,6 +242,24 @@ body {
   color: var(--text-color);
 }
 
+.about-section-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  width: 270px;
+  height: 120px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.about-svg {
+  width: 70px;
+  height: 70px;
+}
+
 /*=============END ABOUT=============*/
 
 /*=============WHAT ARE WE DOING=============*/
@@ -283,7 +322,7 @@ body {
 }
 
 .team-position {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.18;
@@ -291,7 +330,87 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 30px;
+}
+
+.social-link-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  fill: var(--text-color);
+}
+
+.social-link-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-link-list:hover,
+.social-link-list:focus {
+  fill: #ffffff;
+  background-color: var(--accent-color);
+}
+
 /*=============END TEAM=============*/
+
+/*=============CLIENTS=============*/
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.client-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.client-link-list {
+  width: 106px;
+  height: 60px;
+
+  fill: var(--text-color);
+}
+
+.client-link-icon {
+  width: 106px;
+  height: 60px;
+}
+
+.client-link-list:hover,
+.client-link-list:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.client-list-item:hover,
+.client-list-item:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/*=============CLIENTS=============*/
 /*=============MAIN END=============*/
 
 /*=============MAIN PORTFOLIO=============*/
